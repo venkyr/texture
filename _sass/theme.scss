@@ -102,50 +102,48 @@ header {
 // Basic Container Class
 //
 .container {
-	margin:0 150px;
+	margin: 0 150px;
 	max-width: 720px;
 
 	div.highlighter-rouge {
-		right: 150px;
+		margin-left: -150px;
+		margin-right: -150px;
+		padding: 0 150px;
 	}
 
-	@media screen and  (max-width: $mobileWidth) {
-		margin:0 15px; 
+	@media screen and (max-width: $mobileWidth) {
+		margin: 0 15px;
 		div.highlighter-rouge {
-			right: 15px;
-		}
-		div.highlight {
-			padding: 30px 15px;
-		}
-	}
-
-	@media screen and (max-width: $tabWidth) and (min-width: $mobileWidth){
-		margin:0 40px;	
-		div.highlighter-rouge {
-			right: 40px;
-		}
-		div.highlight {
-			padding: 30px 40px;
+			margin-left: -15px;
+			margin-right: -15px;
+			padding: 0 15px;
 		}
 	}
 
-	@media screen and (max-width: $desktopWidth) and (min-width: $tabWidth){
-		margin:0 80px;
+	@media screen and (max-width: $tabWidth) and (min-width: $mobileWidth) {
+		margin: 0 40px;
 		div.highlighter-rouge {
-			right: 80px;
+			margin-left: -40px;
+			margin-right: -40px;
+			padding: 0 40px;
 		}
-		div.highlight {
-			padding: 30px 80px;
+	}
+
+	@media screen and (max-width: $desktopWidth) and (min-width: $tabWidth) {
+		margin: 0 80px;
+		div.highlighter-rouge {
+			margin-left: -80px;
+			margin-right: -80px;
+			padding: 0 80px;
 		}
 	}
 
 	@media screen and (min-width: $desktopWidth) and (max-width: 1280px) {
-		margin:0 100px;
+		margin: 0 100px;
 		div.highlighter-rouge {
-			right: 100px;
-		}
-		div.highlight {
-			padding: 30px 100px;
+			margin-left: -100px;
+			margin-right: -100px;
+			padding: 0 100px;
 		}
 	}
 }
